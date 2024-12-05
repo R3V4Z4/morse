@@ -24,6 +24,11 @@ p {
   padding: 15px 0px 15px 15px;
   border-radius: 20px;
   z-index: 999;
+  transition: top 0.3s ease-in-out;
+}
+
+.header.hidden {
+  top: -100px;
 }
 
 .header ul {
