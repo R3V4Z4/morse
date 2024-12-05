@@ -16,19 +16,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
   new Splide("#carousel2", {
     type: "loop",
-    perPage: 7,
+    direction: "ttb",
+    height: "400px",
+    perPage: 3,
+    pagination: false,
+    arrows: false,
+    autoScroll: {
+      speed: -1,
+    },
+  }).mount(window.splide.Extensions);
+
+  new Splide("#carousel3", {
+    type: "loop",
+    direction: "ttb",
+    height: "400px",
+    perPage: 3,
     pagination: false,
     arrows: false,
     autoScroll: {
       speed: 1,
-    },
-    breakpoints: {
-      500: {
-        perPage: 5,
-      },
-      415: {
-        perPage: 4,
-      },
     },
   }).mount(window.splide.Extensions);
 
@@ -44,4 +50,6 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   }).mount();
+
+
 });
