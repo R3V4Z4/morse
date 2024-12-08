@@ -11,6 +11,10 @@ p {
   font-family: "BPG Algeti", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .header {
   box-sizing: border-box;
   position: fixed;
@@ -29,6 +33,10 @@ p {
 
 .header.hidden {
   top: -100px;
+}
+
+.header a {
+  color: white;
 }
 
 .header ul {
@@ -110,6 +118,10 @@ p {
   line-height: 25px;
 }
 
+.about-container p:nth-child(2) {
+  margin-top: 10px;
+}
+
 .around-logos {
   position: absolute;
   height: 100px;
@@ -178,7 +190,7 @@ p {
 }
 
 .morse-experience {
-  background-image: url("../images/background.png");
+  background: url("/images/background.png");
   height: 250px;
   display: flex;
   justify-content: center;
@@ -298,30 +310,164 @@ p {
   font-weight: bold;
 }
 
-.footer {
+.footer-container {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr 1.2fr;
+  background-color: black;
+  padding: 40px;
   box-sizing: border-box;
-  display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   width: 85%;
   margin: 0 auto;
-  background-color: black;
-  padding: 50px 20px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  z-index: 999;
 }
 
-.footer ul {
-  width: 100%;
+.one-footer-container img {
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.one-footer-container {
+  white-space: normal;
+}
+
+.one-footer-container p,
+.one-footer-container a {
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  font-family: "BPG Algeti", sans-serif;
+}
+
+.one-container-contacts h4,
+.one-footer-container h4 {
+  font-size: 25px;
+  padding-bottom: 15px;
+
+  color: white;
+}
+
+.one-footer-container ul {
+  font-size: 20px;
+  line-height: 30px;
+  transition: all 0.2s ease-in-out;
+}
+
+.one-footer-container ul :hover {
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+}
+
+.one-container-contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contact-ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 60%;
+  justify-items: center;
+}
+
+.contact-ul i {
+  font-size: 40px;
+  margin-top: 40px;
+  color: rgb(199, 199, 199);
+}
+
+.working-title {
+  padding-top: 160px;
+  margin-bottom: 40px;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.working-section1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.first-arrow {
+  position: absolute;
+  scale: 1.8;
+  top: 30%;
+}
+
+.working-section2 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.second-arrow {
+  position: absolute;
+  right: 24%;
+  top: 15%;
+  transform: rotateY(180deg);
+  rotate: 90deg;
+  scale: 1.5;
+}
+
+.third-arrow {
+  position: absolute;
+  left: 22%;
+  top: 50%;
+  scale: 1.5;
+}
+
+.working-section3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.fourth-arrow {
+  position: absolute;
+  scale: 1.8;
+  top: 35%;
+}
+
+.working-paragraph-wrapper {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.working-section1 img,
+.working-section2 img,
+.working-section3 img {
+  height: 100px;
+}
+
+.working-paragraph {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
-  color: white;
-  font-family: "BPG Arial Caps", sans-serif;
-  font-size: 15px;
+  justify-content: center;
+  gap: 10px;
+  line-height: 25px;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid black;
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.282);
+  backdrop-filter: blur(15px);
+  height: 150px;
 }
 
-.footer-logo {
-  height: 50px;
+.working-paragraph-wrapper h2 {
+  font-size: 30px;
+  font-weight: bold;
 }
