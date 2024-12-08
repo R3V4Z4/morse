@@ -190,7 +190,7 @@ a {
 }
 
 .morse-experience {
-  background: url("/images/background.png");
+  background: url("../images/background.png");
   height: 250px;
   display: flex;
   justify-content: center;
