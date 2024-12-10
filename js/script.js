@@ -67,3 +67,19 @@ window.addEventListener("scroll", function () {
   lastScrollTop = scrollTop;
 });
 
+let divAccArray = document.querySelectorAll(".one-accordion");
+
+divAccArray.forEach(function (item) {
+  item.addEventListener("click", function () {
+    // Close all other accordions
+    divAccArray.forEach((accordion) => {
+      if (accordion !== this) {
+        accordion.classList.remove("active");
+      }
+    });
+
+    // Toggle the clicked accordion
+    this.classList.toggle("active");
+  });
+});
+
