@@ -1,5 +1,35 @@
 "use strict";
 
+let lastScrollTop = 0;
+const header = document.querySelector(".header");
+
+window.addEventListener("scroll", function () {
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  if (scrollTop > lastScrollTop) {
+    header.classList.add("hidden");
+  } else {
+    header.classList.remove("hidden");
+  }
+  lastScrollTop = scrollTop;
+});
+
+let divAccArray = document.querySelectorAll(".one-accordion");
+
+divAccArray.forEach(function (item) {
+  item.addEventListener("click", function () {
+    // Close all other accordions
+    divAccArray.forEach((accordion) => {
+      if (accordion !== this) {
+        accordion.classList.remove("active");
+      }
+    });
+
+    // Toggle the clicked accordion
+    this.classList.toggle("active");
+  });
+});
+
+
 document.addEventListener("DOMContentLoaded", function () {
   new Splide("#carousel1", {
     type: "fade", // Enables fade transitions
@@ -54,32 +84,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-let lastScrollTop = 0;
-const header = document.querySelector(".header");
 
-window.addEventListener("scroll", function () {
-  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  if (scrollTop > lastScrollTop) {
-    header.classList.add("hidden");
-  } else {
-    header.classList.remove("hidden");
-  }
-  lastScrollTop = scrollTop;
-});
-
-let divAccArray = document.querySelectorAll(".one-accordion");
-
-divAccArray.forEach(function (item) {
-  item.addEventListener("click", function () {
-    // Close all other accordions
-    divAccArray.forEach((accordion) => {
-      if (accordion !== this) {
-        accordion.classList.remove("active");
-      }
-    });
-
-    // Toggle the clicked accordion
-    this.classList.toggle("active");
-  });
-});
 
