@@ -32,14 +32,38 @@
     <header>
       <nav>
         <div class="header">
-          <img class="header-logo" src="images/morse new-01.png" />
-          <ul>
-            <li><a>ჩვენს შესახებ</a></li>
-            <li><a href="html/services.html">სერვისები</a></li>
+          <img class="header-logo" src="images/logos/morse new-01.png" />
+          <ul class="header-list">
+            <li><a>მთავარი</a></li>
+            <li class="dropdown-service">
+              <a>სერვისები</a>
+              <i class="fa-solid fa-angle-down dropdown-arrow"></i>
+              <ul class="dropdown-contet">
+                <li><a href="html/services.html">პრეზენტაცია</a></li>
+                <li><a href="html/services.html">ტრენინგი</a></li>
+                <li><a href="html/services.html">კონსულტაცია</a></li>
+              </ul>
+            </li>
             <li><a href="html/working.html">როგორ მუშაობს</a></li>
             <li><a>პარტნიორები</a></li>
             <li><a>პორტფოლიო</a></li>
             <li><a>კონტაქტი</a></li>
+          </ul>
+          <ul>
+            <li
+              style="
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-end;
+                color: white;
+                padding-right: 20px;
+                gap: 10px;
+              "
+            >
+              <p>+995 595 00 44 54</p>
+              <p>Makharadze.g90@gmail.com</p>
+            </li>
           </ul>
         </div>
       </nav>
@@ -213,52 +237,42 @@
       </section>
       <section class="service-section">
         <h2 class="services-title">სერვისები</h2>
-        <div id="carousel4" class="splide slide4">
-          <div class="splide__track">
-            <ul class="splide__list">
-              <li class="splide__slide">
-                <img
-                  src="images/419230994_1137271237684040_6140573261887317463_n.jpg"
-                  alt="building image"
-                />
-                <div class="img-info4">
-                  <h2>მშენებლობა</h2>
-                  <button class="data more" data-link="html/building.html">
-                    იხილეთ ვრცლად...
-                  </button>
-                </div>
-              </li>
-              <li class="splide__slide">
-                <img
-                  src="images/420092136_1137270721017425_6676693474321800237_n.jpg"
-                  alt="floor image"
-                />
-                <div class="img-info4">
-                  <h2>ინდუსტრიული იატაკი</h2>
-                  <button
-                    class="data more"
-                    data-link="html/productionfloors.html"
-                  >
-                    იხილეთ ვრცლად...
-                  </button>
-                </div>
-              </li>
-              <li class="splide__slide">
-                <img
-                  src="images/420103729_1137271027684061_7573878762911200831_n.jpg"
-                  alt="factory image"
-                />
-                <div class="img-info4">
-                  <h2>სამრეწველო მშენებლობა</h2>
-                  <button
-                    class="data more"
-                    data-link="/html/Industrialconstruction.html"
-                  >
-                    იხილეთ ვრცლად...
-                  </button>
-                </div>
-              </li>
-            </ul>
+        <div class="services-container">
+          <div class="one-service-container">
+            <img
+              src="images/WhatsApp Image 2024-04-09 at 08.10.38_5d7564a8.jpg"
+              alt=""
+            />
+            <div class="service-card">
+              <h4>პრეზენტაციის დამზადება</h4>
+              <button class="data more" data-link="/html/services.html">
+                იხილეთ ვრცლად...
+              </button>
+            </div>
+          </div>
+          <div class="one-service-container">
+            <img
+              src="images/WhatsApp Image 2024-04-06 at 15.15.22_a6ee8616.jpg"
+              alt=""
+            />
+            <div class="service-card">
+              <h4>კორპორაციული და ინდივიდუალური ტრენინგი</h4>
+              <button class="data more" data-link="/html/services.html">
+                იხილეთ ვრცლად...
+              </button>
+            </div>
+          </div>
+          <div class="one-service-container">
+            <img
+              src="images/WhatsApp Image 2024-04-09 at 08.10.38_a40b67d2.jpg"
+              alt=""
+            />
+            <div class="service-card">
+              <h4>ინდივიდუალური კონსულტაცია</h4>
+              <button class="data more" data-link="/html/services.html">
+                იხილეთ ვრცლად...
+              </button>
+            </div>
           </div>
         </div>
       </section>
