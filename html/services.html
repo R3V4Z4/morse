@@ -30,13 +30,37 @@
       <nav>
         <div class="header">
           <img class="header-logo" src="../images/logos/morse new-01.png" />
-          <ul>
-            <li><a>ჩვენს შესახებ</a></li>
-            <li><a>სერვისები</a></li>
-            <li><a>როგორ მუშაობს</a></li>
+          <ul class="header-list">
+            <li><a href="../index.html">მთავარი</a></li>
+            <li class="dropdown-service">
+              <a>სერვისები</a>
+              <i class="fa-solid fa-angle-down dropdown-arrow"></i>
+              <ul class="dropdown-contet">
+                <li><a href="html/services.html">პრეზენტაცია</a></li>
+                <li><a href="html/services.html">ტრენინგი</a></li>
+                <li><a href="html/services.html">კონსულტაცია</a></li>
+              </ul>
+            </li>
+            <li><a href="working.html">როგორ მუშაობს</a></li>
             <li><a>პარტნიორები</a></li>
             <li><a>პორტფოლიო</a></li>
             <li><a>კონტაქტი</a></li>
+          </ul>
+          <ul>
+            <li
+              style="
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-end;
+                color: white;
+                padding-right: 20px;
+                gap: 10px;
+              "
+            >
+              <p>+995 595 00 44 54</p>
+              <p>Makharadze.g90@gmail.com</p>
+            </li>
           </ul>
         </div>
       </nav>
@@ -45,37 +69,51 @@
       <h1 class="morse-services-title">რას გვთავაზობს მორზე?</h1>
       <section>
         <div class="first-service">
-          <div class="first-service2">
-            <h2>01. პრეზენტაციის დამზადება</h2>
-            <p>✔ საიმიჯო პრეზენტაცია კომპანიის შესახებ;</p>
-            <p>✔ პრეზენტაცია ინვესტორებისა და პარტნიორებისთვის;</p>
-            <p>✔ პრეზენტაცია პროდუქტის & მომსახურების შესახებ;</p>
-            <p>✔ პრეზენტაცია პროექტების შესახებ;</p>
-            <p>✔ საგანმანათლებლო პრეზენტაცია;</p>
-            <p>✔ პრეზენტაცია Event_ისთვის;</p>
-            <p>✔ საგანმანათლებლო პრეზენტაცია;</p>
-            <p>✔ კომპანიის პრეზენტაციის სტანდარტების შემუშავება</p>
+          <h2>1. პრეზენტაციის დამზადება</h2>
+          <div class="first-service-grid">
+            <div class="first-service-item">
+              <h3>✔ საიმიჯო პრეზენტაცია კომპანიის შესახებ</h3>
+            </div>
+            <div class="first-service-item">
+              <h3>✔ პრეზენტაცია ინვესტორებისა და პარტნიორებისთვის</h3>
+            </div>
+            <div class="first-service-item">
+              <h3>✔ პრეზენტაცია პროდუქტის & მომსახურების შესახებ</h3>
+            </div>
+            <div class="first-service-item">
+              <h3>✔ პრეზენტაცია პროექტების შესახებ</h3>
+            </div>
+            <div class="first-service-item">
+              <h3>✔ საგანმანათლებლო პრეზენტაცია</h3>
+            </div>
+            <div class="first-service-item">
+              <h3>✔ პრეზენტაცია Event_ისთვის</h3>
+            </div>
+            <div class="first-service-item">
+              <h3>✔ საგანმანათლებლო პრეზენტაცია</h3>
+            </div>
+            <div class="first-service-item">
+              <h3>✔ კომპანიის პრეზენტაციის სტანდარტების შემუშავება</h3>
+            </div>
           </div>
-          <img
-            class="first-service-image"
-            src="../images/419230994_1137271237684040_6140573261887317463_n.jpg"
-            alt="me image"
-          />
         </div>
       </section>
-      <section class="second-service-section">
-        <h2 class="second-service-title">
-          02. კორპორაციული და ინდივიდუალური ტრენინგი “პრეზენტაციის უნარების”
-          შესახებ.
-        </h2>
-        <div class="accordion-container">
-          <div class="one-accordion">
-            <div class="accordion-title-container">
-              <h3>მასტერკლასი</h3>
-              <i class="fa-solid fa-arrow-down"></i>
-            </div>
-            <div class="accordion-content-container">
-              <table>
+      <section>
+        <div class="second-service-wrapper">
+          <div class="second-service-title">
+            <h2>
+              2. კორპორაციული და ინდივიდუალური ტრენინგი “პრეზენტაციის უნარების”
+              შესახებ.
+            </h2>
+            <img
+              src="../images/420092136_1137270721017425_6676693474321800237_n.jpg"
+              alt=""
+            />
+          </div>
+          <div class="second-service-content-container">
+            <div class="second-service-content">
+              <h3>2.1. მასტერკლასი</h3>
+              <table class="second-service-table">
                 <tr>
                   <td>შეხვედრების რაოდენობა</td>
                   <td>1 - 2</td>
@@ -90,14 +128,9 @@
                 </tr>
               </table>
             </div>
-          </div>
-          <div class="one-accordion">
-            <div class="accordion-title-container">
-              <h3>მოკლე კურსი</h3>
-              <i class="fa-solid fa-arrow-down"></i>
-            </div>
-            <div class="accordion-content-container">
-              <table>
+            <div class="second-service-content">
+              <h3>2.2. მოკლე კურსი</h3>
+              <table class="second-service-table">
                 <tr>
                   <td>შეხვედრების რაოდენობა</td>
                   <td>4</td>
@@ -112,14 +145,9 @@
                 </tr>
               </table>
             </div>
-          </div>
-          <div class="one-accordion">
-            <div class="accordion-title-container">
-              <h3>სრული კურსი</h3>
-              <i class="fa-solid fa-arrow-down"></i>
-            </div>
-            <div class="accordion-content-container">
-              <table>
+            <div class="second-service-content">
+              <h3>2.3. სრული კურსი</h3>
+              <table class="second-service-table">
                 <tr>
                   <td>შეხვედრების რაოდენობა</td>
                   <td>7</td>
@@ -137,8 +165,53 @@
           </div>
         </div>
       </section>
+      <section>
+        <div class="third-service-wrapper">
+          <img
+            class="about-me-image"
+            src="../images/ISU_2066.jpg"
+            alt="me image"
+          />
+          <div class="third-service-content">
+            <h2>3.ინდივიდუალური კონსულტაცია</h2>
+            <p>ან სიტყვით გამოსვლკონსულტაცია გადამწყვეტი პრეზენტაციისის წინ.</p>
+            <p>
+              ამ სერვისით განსაკუთრებით მნიშვნელვანი პრეზენტაციის წინ შეგიძლიათ
+              ისარგებლოთ. როდესაც დრო ცოტა გაქვთ და “ფსონები” ძალიან მაღალია.
+            </p>
+            <p>
+              ეს საუკეთესო მომენტია იმისთვის, რომ შეხვედრა დაჯავშნოთ
+              პრეზენტაციებისა და კომუნიკაციების ექსპერტთან:
+            </p>
+            <ul>
+              <li><p>სკოლაში</p></li>
+              <li><p>უნივერსიტეტში</p></li>
+              <li><p>სამსახურში</p></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="profile-wrapper">
+        <!-- <img class="services-around-logos one" src="../images/VE_2.png" />
+        <img class="services-around-logos two" src="../images/VE_2.png" />
+        <img class="services-around-logos three" src="../images/VE_2.png" /> -->
+        <h2 class="profile-title">გაიცანი ექსპერტი ვისთან ერთადაც იმუშავებ</h2>
+        <div class="profile-card">
+          <img src="../images/940A9585ფ.jpg" alt="" />
+          <div class="profile-card-content">
+            <h3>გიორგი მახარაძე</h3>
+            <h4>პრეზენტაციებისა და კომუნიკაციების ექსპერტი</h4>
+            <p>
+              დღემდე გიორგი” მორზეს” შემოქმედების მთავარი არქიტეტორია. მორზესთან
+              ერთად გიორგის ….. ამ ტექსტს მერე დავასრულებ გიორგი 5 წელია,
+              “ილიაუნის” სამაგისტრო საფეხურზე, საავტორო კურსს კითხულობს
+              “პრეზენტაციისა და თხრობის უნარების” შესახებ.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer>
+    <footer >
       <div class="footer-container">
         <div class="one-footer-container">
           <img src="/images/logos/morse new-01.png" alt="მორზეს ლოგო" />
