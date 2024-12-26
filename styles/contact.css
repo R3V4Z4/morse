@@ -1,0 +1,129 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "BPG Arial Caps", sans-serif;
+}
+
+p {
+  font-family: "BPG Algeti", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+strong {
+  font-weight: bold;
+  font-family: "BPG Arial Caps", sans-serif;
+}
+
+body {
+  background-image: url("../images/morse\ new-02.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+  height: 1000px;
+}
+.contact-section {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  gap: 80px;
+  margin: 170px 115px 50px 115px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1); /* Transparent background */
+  backdrop-filter: blur(10px); /* Blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  color: #333; /* Text color */
+  border-radius: 30px;
+}
+
+.contact-text {
+  width: 47%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  line-height: 20px;
+  font-size: 18px;
+}
+
+.contact-text h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.contact-cards {
+  width: 53%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  padding: 20px;
+  border-radius: 15px;
+  gap: 20px;
+}
+
+.one-contact-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.accordion-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}
+.one-accordion {
+  width: 60%;
+  border-radius: 20px;
+  border: 10px solid transparent;
+  border-image: linear-gradient(to bottom, white, yellow) 1;
+  border-image-slice: 1;
+  margin: 20px;
+  padding: 20px;
+  cursor: pointer;
+  color: black;
+  background: white;
+}
+
+.accordion-content-container {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.4s ease-in-out;
+  line-height: 20px;
+  font-family: "BPG Arial Caps", sans-serif;
+}
+
+.one-accordion.active .accordion-content-container {
+  height: 140px;
+}
+
+.one-accordion.active .accordion-title-container i {
+  rotate: 180deg;
+}
+
+.accordion-title-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.accordion-title-container i {
+  transition: 0.3s ease-in-out;
+}
