@@ -112,6 +112,17 @@
   rotate: 180deg;
 }
 
+.header-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  color: white;
+  padding-right: 20px;
+  gap: 10px;
+  font-family: "BPG Arial Caps", sans-serif;
+}
+
 .footer-container {
   display: grid;
   grid-template-columns: 1.2fr 1fr 1fr 1.2fr;
