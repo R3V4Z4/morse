@@ -24,9 +24,9 @@
       rel="stylesheet"
       href="styles/splide-sea-green.min.css"
     />
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/media.css" />
+    
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/index.css" />
   </head>
   <body>
     <header>
@@ -34,7 +34,7 @@
         <div class="header">
           <img class="header-logo" src="images/morse new-01.png" />
           <ul class="header-list">
-            <li><a>მთავარი</a></li>
+            <li><a href="index.html">მთავარი</a></li>
             <li class="dropdown-service">
               <a>სერვისები</a>
               <i class="fa-solid fa-angle-down dropdown-arrow"></i>
@@ -45,9 +45,9 @@
               </ul>
             </li>
             <li><a href="html/working.html">როგორ მუშაობს</a></li>
-            <li><a>პარტნიორები</a></li>
-            <li><a>პორტფოლიო</a></li>
-            <li><a>კონტაქტი</a></li>
+            <li><a href="html/partners.html>პარტნიორები</a></li>
+            <li><a href="html/portfolio.html>პორტფოლიო</a></li>
+            <li><a href="html/contact.html">კონტაქტი</a></li>
           </ul>
           <ul>
             <li
@@ -59,40 +59,38 @@
                 color: white;
                 padding-right: 20px;
                 gap: 10px;
+              font-family: 'BPG Arial Caps', sans-serif;
               "
             >
-              <p>+995 595 00 44 54</p>
-              <p>Makharadze.g90@gmail.com</p>
+              <p style="font-family: 'BPG Arial Caps', sans-serif">+995 595 00 44 54</p>
+              <p style="font-family: 'BPG Arial Caps', sans-serif">Makharadze.g90@gmail.com</p>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    <main>
+<main>
       <section>
         <div id="carousel1" class="splide">
           <div class="splide__track">
             <ul class="splide__list">
               <li class="splide__slide">
-                <img src="images/morse new-02.jpg" />
+                <img src="images/morse new-03.jpg" alt="More than Morse" />
               </li>
               <li class="splide__slide">
-                <img src="images/morse new-03.jpg" />
+                <img src="images/morse new-04.jpg" alt="More than Morse" />
               </li>
               <li class="splide__slide">
-                <img src="images/morse new-04.jpg" />
+                <img src="images/morse new-05.jpg" alt="More than Morse" />
               </li>
               <li class="splide__slide">
-                <img src="images/morse new-05.jpg" />
+                <img src="images/morse new-06.jpg" alt="More than Morse" />
               </li>
               <li class="splide__slide">
-                <img src="images/morse new-06.jpg" />
+                <img src="images/morse new-07.jpg" alt="More than Morse" />
               </li>
               <li class="splide__slide">
-                <img src="images/morse new-07.jpg" />
-              </li>
-              <li class="splide__slide">
-                <img src="images/morse new-08.jpg" />
+                <img src="images/morse new-08.jpg" alt="More than Morse" />
               </li>
             </ul>
           </div>
@@ -103,14 +101,28 @@
           <img
             class="around-logos first"
             src="images/Screenshot_2023-08-04_121407-removebg-preview.png"
+            alt="morse shape"
           />
-          <img class="around-logos second" src="images/VE_2.png" />
+          <img
+            class="around-logos second"
+            src="images/VE_2.png"
+            alt="morse shape"
+          />
           <img
             class="around-logos third"
             src="images/Screenshot_2023-08-04_121407-removebg-preview.png"
+            alt="morse shape"
           />
-          <img class="around-logos fourth" src="images/VE_3.png" />
-          <img class="around-logos fifth" src="images/VE_3.png" />
+          <img
+            class="around-logos fourth"
+            src="images/VE_3.png"
+            alt="morse shape"
+          />
+          <img
+            class="around-logos fifth"
+            src="images/VE_3.png"
+            alt="morse shape"
+          />
           <div class="about-container">
             <h1>მორზეს შესახებ</h1>
             <p>
@@ -144,12 +156,13 @@
       <section>
         <div class="about-me">
           <div class="about-me2">
-<h2>ვინ არის მორზე?</h2>
+            <h2>ვინ არის მორზე?</h2>
             <p>
               “მორზე” შექმნის იდეა გიორგი მახარაძეს ეკუთვნის. დღემდე გიორგი”
-              მორზეს” შემოქმედების მთავარი არქიტეტორია. გიორგი 5 წელია,
-              “ილიაუნის” სამაგისტრო საფეხურზე, საავტორო კურსს კითხულობს
-              “პრეზენტაციისა და თხრობის უნარების” შესახებ.
+              მორზეს” შემოქმედების მთავარი არქიტეტორია. გიორგი
+              <strong>5 წელია</strong> , “ილიაუნის” სამაგისტრო საფეხურზე,
+              საავტორო კურსს კითხულობს “პრეზენტაციისა და თხრობის უნარების”
+              შესახებ.
             </p>
             <p>
               “მჯერა რომ ამბებს,ისტორიებს ჯადოსნური ძალა აქვთ. თხრობას,
@@ -162,54 +175,62 @@
           <img
             class="about-me-image"
             src="images/ISU_2066.jpg"
-            alt="me image"
+            alt="George Makharadze - founder of Morse"
           />
         </div>
       </section>
       <section class="morse-experience">
         <h4>„მორზე“ პრეზენტაციას პოზიტიურ გამოცდილებად აქცევს</h4>
       </section>
-
       <section>
         <div class="partners-wrapper">
           <div class="partners-container">
             <h4>პარტნიორები</h4>
             <p>
-              ზურგს 5 წლიანი გამოცდილება გვიმაგრებს. ამ დროის განმავლობაში,
-              ვითანამშრომლეთ როგორც ადგილობრივ ასევე საერთაშორისო
+              ზურგს <strong>5 წლიანი </strong> გამოცდილება გვიმაგრებს. ამ დროის
+              განმავლობაში, ვითანამშრომლეთ როგორც ადგილობრივ ასევე საერთაშორისო
               ორგანიზაციებთან - Radisson Blu Iveria; Buckswood; UNA Georgia;
               Evex; Wolt Azerbaijan; Wellness Coaching Australia; Olivier
               Courtois და სხვა
             </p>
+            <button
+              class="partners-btn card-btn data"
+              data-link="/html/services.html"
+            >
+              იხილეთ ვრცლად
+            </button>
           </div>
           <div class="carousels">
             <div id="carousel2" class="splide">
               <div class="splide__track">
                 <ul class="splide__list">
                   <li class="splide__slide">
-                    <img src="images/partners8.png" alt="Image 4" />
-                  </li>
-                  <li class="splide__slide">
                     <img
                       class="partners1"
-                      src="images/partners9.png"
-                      alt="Image 5"
+                      src="images/parnters1.png"
+                      alt="ALTERBRIDGE logo"
                     />
                   </li>
                   <li class="splide__slide">
-                    <img src="images/partners10.png" alt="Image 6" />
+                    <img src="images/partners2.png" alt="AMS logo" />
                   </li>
                   <li class="splide__slide">
-                    <img src="images/partners11.png" alt="Image 4" />
+                    <img
+                      src="images/partners3.png"
+                      alt="Buckswood school logo"
+                    />
                   </li>
                   <li class="splide__slide">
-                    <img src="images/partners12.jpg" alt="Image 5" />
+                    <img src="images/partners4.png" alt="Evex logo" />
                   </li>
                   <li class="splide__slide">
-                    <img src="images/partners13.png" alt="Image 6" />
+                    <img src="images/partners5.png" alt="Grampus logo" />
                   </li>
                   <li class="splide__slide">
-                    <img src="images/partners14.png" alt="Image 4" />
+                    <img src="images/partners6.png" alt="Iliauni logo" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="images/partners7.png" alt="Lolu logo" />
                   </li>
                 </ul>
               </div>
@@ -218,29 +239,35 @@
               <div class="splide__track">
                 <ul class="splide__list">
                   <li class="splide__slide">
-                    <img src="images/partners8.png" alt="Image 4" />
+                    <img
+                      src="images/partners8.png"
+                      alt="OlivierCourtios logo"
+                    />
                   </li>
                   <li class="splide__slide">
                     <img
                       class="partners1"
                       src="images/partners9.png"
-                      alt="Image 5"
+                      alt="Radisson Blu logo"
                     />
                   </li>
                   <li class="splide__slide">
-                    <img src="images/partners10.png" alt="Image 6" />
+                    <img src="images/partners10.png" alt="UNA logo" />
                   </li>
                   <li class="splide__slide">
-                    <img src="images/partners11.png" alt="Image 4" />
+                    <img src="images/partners11.png" alt="UNFPA logo" />
                   </li>
                   <li class="splide__slide">
-                    <img src="images/partners12.jpg" alt="Image 5" />
+                    <img src="images/partners12.jpg" alt="Verge logo" />
                   </li>
                   <li class="splide__slide">
-                    <img src="images/partners13.png" alt="Image 6" />
+                    <img
+                      src="images/partners13.png"
+                      alt="Wellness Coaching Australia logo"
+                    />
                   </li>
                   <li class="splide__slide">
-                    <img src="images/partners14.png" alt="Image 4" />
+                    <img src="images/partners14.png" alt="Wolt logo" />
                   </li>
                 </ul>
               </div>
@@ -252,48 +279,71 @@
         <h2 class="why-morse-title">რატომ მორზე?</h2>
         <div class="why-morse-wrapper">
           <div class="why-morse">
-            <h5>პროფესიონალიზმი</h5>
+            <h5>გამოცდილება</h5>
             <div class="why-content1">
-              <img class="why-content1-img" src="images/review.png" />
+              <img
+                class="why-content1-img"
+                src="images/review.png"
+                alt="Morse Experience icon"
+              />
               <p>
-                გიორგი, პრეზენტაციებისა და ვიზაულური თხრობის ექპერტია. გარდა
-                პროფესიული გამოცდილებისა, სალექციო კურსს კითხულობს ილიაუნის
-                მაგისტრატურის საფეხურის სტუდენტებისთვის.
+                “მორზე” საქართველოში პირველი კომპანიაა, რომლის მთავარი პროფილიც
+                “პრეზენტაციებია”. გამოცდილება და პროფესიონალიზმი მორზეს მთავარი
+                “სუპერძალაა”. “მორზე” <strong>5 წელია</strong> პრეზენტაციების
+                სამყაროშია. ამ დროის განმავლობაში, ვითანამშრომლეთ როგორც
+                ადგილობრივ ასევე საერთაშორისო ორგანიზაციებთან.
               </p>
             </div>
           </div>
           <div class="why-morse">
-            <h5>საუკეთესო პრეზენტაცია</h5>
+            <h5>პროფესიონალიზმი</h5>
             <div class="why-content2">
-              <img class="why-content2-img" src="images/impression.png" />
+              <img
+                class="why-content2-img"
+                src="images/businessman.png"
+                alt="Morse Professionalism icon"
+              />
               <p>
-                როდესაც თქვენთვის ძალიან მნიშვნელოვანი პრეზენტაცია დაგჭირდებათ,
-                ჩვენ დაგეხმარებით, დასამახსოვრებელი, დამაჯერებელი და
-                შთამაგონებელი სლაიდების შექმნაში. სიტყვებს ილუსტრაციებად,
-                პრეზენტაციას კი პოზიტიურ გამოცდილებად ვაქცევთ.
+                გიორგი - თხრობის, პრეზენტაციებისა და ვიზუალური კომუნიკაციის
+                ექპერტია. გარდა კოლოსალური პროფესიული გამოცდილებისა, გიორგი
+                პრეზენტაციებისა და თხრობის შესახებ, სალექციო კურსს კითხულობს
+                ილიაუნის მაგისტრატურის საფეხურის სტუდენტებისთვის.
               </p>
             </div>
           </div>
           <div class="why-morse">
             <h5>კონფიდენციალურობა</h5>
             <div class="why-content3">
-              <img class="why-content3-img" src="images/privacy.png" />
+              <img
+                class="why-content3-img"
+                src="images/privacy.png"
+                alt="Morse Privacy icon"
+              />
               <p>
-                ჩვენთვის ნდობასა და კონფიდენციალურობას გადამწვყეტი მნიშვნელობა
-                აქვს, მზად ვართ “კონფედენციალურიბს ხელშეკრულებაც” (NDA)
-                გავაფორმოთ.
+                ჩვენთვის და ჩვენი პარტნიორებისთვის ნდობას და კონფიდენციალურობა
+                სგადამწვყეტი მნიშვნელობა აქვს. მზად
+                ვართ“კონფედენციალურიბის/გაუმჟღავნებლობის ხელშეკრულებაც”
+                <strong>(NDA)</strong>
+                გავაფორმოთ. ვამაყობთ იმით, რომ პარტნიორების ნდობას ყოველთვის
+                ვამართლებთ.
               </p>
             </div>
           </div>
+
           <div class="why-morse">
-            <h5>თანმიმდევრულობა</h5>
+            <h5>საუკეთესო პრეზენტაცია</h5>
             <div class="why-content4">
-              <img class="why-content4-img" src="images/process.png" />
+              <img
+                class="why-content2-img"
+                src="images/impression.png"
+                alt="Morse Best Presentation icon"
+              />
+
               <p>
-                ვიზუალ იერარქია, ჰარმონიულ ფერთა პალიტრა და სწორად შერჩეული
-                ნარატივი თანმიმდევრული პრეზენტაციის მთავარი ინგრედიენტებია.
-                ინფორმაცია ერთმანეთთან აკავშირებს ფაქტებს, ისტორიები კი გულებს.
-                ჩვენ დაგეხმარებით ასეთი ამბების თხრობაში.
+                როდესაც თქვენთვის ძალიან მნიშვნელოვანი პრეზენტაცია დაგჭირდებათ,
+                “მორზე” დაგეხმარებით დასამახსოვრებელი, დამაჯერებელი და
+                შთამაგონებელის ლაიდების შექმნაში. სიტყვებს ილუსტრაციებად,
+                პრეზენტაციას კი პოზიტიურ გამოცდილებად ვაქცევთ.
               </p>
             </div>
           </div>
@@ -301,64 +351,66 @@
       </section>
       <section class="four-numbers-section">
         <div class="numbers">
-          <img src="images/success.png" />
-          <p>42</p>
-          <h4>წარმატებული პროექტი</h4>
+          <img src="images/quality.png" alt="Morse experience icon" />
+          <p>5+</p>
+          <h4>გამოცდილება</h4>
         </div>
         <div class="numbers">
-          <img src="images/coronavirus.png" />
+          <img src="images/coronavirus.png" alt="Morse countrys icon" />
           <p>12</p>
           <h4>ქვეყანა</h4>
         </div>
         <div class="numbers">
-          <img src="images/work-time.png" />
+          <img src="images/success.png" alt="Morse succesfull projects icon" />
+          <p>42</p>
+          <h4>წარმატებული პროექტი</h4>
+        </div>
+        <div class="numbers">
+          <img src="images/work-time.png" alt="Morse hours icon" />
           <p>300+</p>
           <h4>საათი</h4>
         </div>
         <div class="numbers">
-          <img src="images/presentation.png" />
+          <img src="images/presentation.png" alt="Morse slide icon" />
           <p>1000+</p>
           <h4>სლაიდი</h4>
         </div>
       </section>
+
       <section class="service-section">
         <h2 class="services-title">სერვისები</h2>
         <div class="services-container">
-          <div class="one-service-container">
+          <div class="services-card">
             <img
-              src="images/WhatsApp Image 2024-04-09 at 08.10.38_5d7564a8.jpg"
-              alt=""
+              src="./images/419230994_1137271237684040_6140573261887317463_n.jpg"
+              alt="Morse service:Making a presentation"
             />
-            <div class="service-card">
-              <h4>პრეზენტაციის დამზადება</h4>
-              <button class="data more" data-link="/html/services.html">
-                იხილეთ ვრცლად...
-              </button>
-            </div>
+            <h4>პრეზენტაციის დამზადება</h4>
+            <button class="card-btn data" data-link="/html/services.html">
+              იხილეთ ვრცლად
+            </button>
           </div>
-          <div class="one-service-container">
+          <div class="services-card">
             <img
-              src="images/WhatsApp Image 2024-04-06 at 15.15.22_a6ee8616.jpg"
-              alt=""
+              src="./images/419230994_1137271237684040_6140573261887317463_n.jpg"
+              alt="Morse service:Training on “Presentation Skills”"
             />
-            <div class="service-card">
-              <h4>კორპორაციული და ინდივიდუალური ტრენინგი</h4>
-              <button class="data more" data-link="/html/services.html">
-                იხილეთ ვრცლად...
-              </button>
-            </div>
+            <h4 class="card-title">
+              ტრენინგი “პრეზენტაციის უნარების” შესახებ.
+            </h4>
+            <button class="card-btn data" data-link="/html/services.html">
+              იხილეთ ვრცლად
+            </button>
           </div>
-          <div class="one-service-container">
+          <div class="services-card">
             <img
-              src="images/WhatsApp Image 2024-04-09 at 08.10.38_a40b67d2.jpg"
-              alt=""
+              src="./images/419230994_1137271237684040_6140573261887317463_n.jpg"
+              alt="Morse service:Individual consultation"
             />
-            <div class="service-card">
-              <h4>ინდივიდუალური კონსულტაცია</h4>
-              <button class="data more" data-link="/html/services.html">
-                იხილეთ ვრცლად...
-              </button>
-            </div>
+            <h4 class="card-title">ინდივიდუალური კონსულტაცია</h4>
+            <button class="card-btn data" data-link="/html/services.html">
+              იხილეთ ვრცლად
+            </button>
           </div>
         </div>
       </section>
@@ -424,6 +476,7 @@
     </footer>
     <script src="./js/splide.min.js"></script>
     <script src="./js/splide-extension-auto-scroll.min.js"></script>
-    <script type="module" src="js/script.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
