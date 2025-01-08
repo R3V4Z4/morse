@@ -20,6 +20,12 @@ strong {
   font-family: "BPG Arial Caps", sans-serif;
 }
 
+em {
+  font-size: 18px;
+  font-style: italic;
+  font-family: "ALK Life", sans-serif;
+}
+
 #carousel1 {
   height: 100vh;
   width: 100%;
@@ -58,14 +64,19 @@ strong {
   background: linear-gradient(to bottom, #ebca75, #ffffff7b);
 }
 .about-container {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   gap: 15px;
   width: 40%;
-  padding: 130px 0px 250px 0px;
+  margin: 70px 0px 120px 0px;
+  padding: 40px;
+  /* border: 1px solid black; */
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.467);
+
+  border-radius: 20px;
 }
 
 .about-container ul {
@@ -103,34 +114,37 @@ strong {
 .around-logos {
   position: absolute;
   height: 100px;
+  /* animation: float 6s infinite ease-in-out; Smooth animation */
 }
 
 .first {
-  top: 130px;
-  left: 20px;
+  top: 50%;
+  left: 1%;
   height: 150px;
 }
 
 .second {
-  top: 140px;
-  right: -60px;
-  rotate: 90deg;
+  top: 50%;
+  right: 1%;
+  rotate: -90deg;
+  height: 120px;
 }
 
 .third {
-  bottom: 20px;
-  right: 45%;
-  height: 160px;
+  bottom: -6%;
+  right: 35%;
+  height: 150px;
 }
 
 .fourth {
-  bottom: 120px;
-  right: 150px;
+  bottom: 10%;
+  right: 12%;
 }
 
 .fifth {
-  bottom: 140px;
-  left: 80px;
+  bottom: 1%;
+  left: 20%;
+  height: 120px;
 }
 
 .about-me {
@@ -169,7 +183,7 @@ strong {
 
 .morse-experience {
   background: url("../images/background.png");
-  height: 250px;
+  height: 220px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -183,7 +197,32 @@ strong {
   font-family: "ALK Life", sans-serif;
   font-size: 50px;
   text-align: center;
-  line-height: 60px;
+  line-height: 80px;
+}
+
+#typing-text {
+  /* white-space: nowrap; */
+  overflow: hidden;
+}
+
+.morse-experience2 {
+  background: url("../images/background.png");
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: top;
+
+  margin: 30px 110px 50px 110px;
+  border-radius: 20px;
+}
+
+.morse-experience2 h4 {
+  font-family: "ALK Life", sans-serif;
+  font-size: 50px;
+  text-align: center;
+  line-height: 80px;
 }
 
 .partners-container {
@@ -240,7 +279,7 @@ strong {
   text-align: center;
   font-size: 40px;
   font-weight: bold;
-  padding: 70px 0px;
+  padding: 70px 0px 30px 0px;
 }
 
 .why-morse-wrapper {
@@ -340,7 +379,7 @@ strong {
 }
 
 .why-morse:nth-child(2) h5 {
-  padding-left: 115px;
+  padding-left: 60px;
 }
 
 .why-morse:nth-child(4) h5 {
@@ -361,6 +400,8 @@ strong {
 }
 
 .numbers {
+  /* background-color: #eaca75; */
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
