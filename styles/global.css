@@ -1,4 +1,6 @@
-
+html {
+  scroll-behavior: smooth;
+}
 .header {
   box-sizing: border-box;
   position: fixed;
