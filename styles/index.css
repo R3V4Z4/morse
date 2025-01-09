@@ -74,9 +74,9 @@ em {
   margin: 70px 0px 120px 0px;
   padding: 40px;
   /* border: 1px solid black; */
-  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.467);
+  /* box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.467); */
 
-  border-radius: 20px;
+  /* border-radius: 20px; */
 }
 
 .about-container ul {
