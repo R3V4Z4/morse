@@ -27,7 +27,7 @@ em {
 }
 
 #carousel1 {
-  height: 100vh;
+  height: 710px;
   width: 100%;
   margin: 0 auto;
   padding: 0;
@@ -53,6 +53,7 @@ em {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .about-container-wraper {
@@ -64,7 +65,6 @@ em {
   background: linear-gradient(to bottom, #ebca75, #ffffff7b);
 }
 .about-container {
-  /* box-sizing: border-box; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -73,10 +73,6 @@ em {
   width: 40%;
   margin: 70px 0px 120px 0px;
   padding: 40px;
-  /* border: 1px solid black; */
-  /* box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.467); */
-
-  /* border-radius: 20px; */
 }
 
 .about-container ul {
@@ -147,6 +143,14 @@ em {
   height: 120px;
 }
 
+.media-title {
+  display: none;
+}
+
+#butt {
+  display: none;
+}
+
 .about-me {
   box-sizing: border-box;
   display: flex;
@@ -155,6 +159,10 @@ em {
   align-items: center;
   gap: 50px;
   padding: 60px 70px 50px 70px;
+}
+
+.media {
+  display: none;
 }
 
 .about-me2 {
@@ -371,26 +379,26 @@ em {
 }
 
 .why-morse:nth-child(1) h5 {
-  padding-right: 210px;
+  padding-right: 32%;
 }
 
 .why-morse:nth-child(3) h5 {
-  padding-right: 60px;
+  padding-right: 10%;
 }
 
 .why-morse:nth-child(2) h5 {
-  padding-left: 60px;
+  padding-left: 15%;
 }
 
 .why-morse:nth-child(4) h5 {
-  padding-left: 25px;
+  padding-left: 4%;
 }
 
 .four-numbers-section {
   background-image: url("../images/morse\ new-02.jpg");
   background-size: cover;
   background-position: center;
-  margin: 60px;
+  margin: 55px;
   border-radius: 20px;
   display: flex;
   flex-direction: row;
@@ -400,8 +408,6 @@ em {
 }
 
 .numbers {
-  /* background-color: #eaca75; */
-
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -412,6 +418,7 @@ em {
   width: 15%;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   border-radius: 20px;
+  height: 175px;
 }
 
 .numbers img {
@@ -426,14 +433,8 @@ em {
 
 .numbers h4 {
   font-size: 16px;
-}
-
-.services-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
-  padding-bottom: 40px;
-  align-items: flex-start;
+  text-align: center;
+  /* font-family: "BPG Algeti", sans-serif; */
 }
 
 .services-card {
@@ -443,11 +444,12 @@ em {
   align-items: flex-start;
   gap: 20px;
   padding: 15px;
+  margin: 15px;
   width: 290px;
   height: 380px;
   border-radius: 15px;
   background: linear-gradient(to bottom, #a5b0b67b, rgba(255, 255, 255, 0.182));
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Inner shadow on top and left */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .services-card img {
@@ -517,7 +519,7 @@ em {
 }
 
 .service-section {
-  padding: 0px 160px;
+  padding: 0px 160px 40px 160px;
 }
 
 .services-title {
@@ -525,4 +527,18 @@ em {
   padding-bottom: 40px;
   font-size: 35px;
   text-align: center;
+}
+
+#carousel6.splide {
+  padding: 0px;
+}
+
+#carousel6 .splide__pagination {
+  display: flex !important;
+}
+
+#carousel6 .splide__slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
