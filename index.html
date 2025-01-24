@@ -55,6 +55,33 @@
             <li>+995 595 00 44 54</li>
             <li>Makharadze.g90@gmail.com</li>
           </ul>
+          <nav class="sidebar">
+            <ul>
+              <li><a>მთავარი</a></li>
+              <li>
+                <a>
+                  სერვისები
+                  <i class="fa-solid fa-angle-down arrow-icon"></i>
+                </a>
+                <div class="sub-menu">
+                  <ul>
+                    <li><a>პრეზენტაცია</a></li>
+                    <li><a>ტრენინგი</a></li>
+                    <li><a>კონსულტაცია</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a>როგორ მუშაობს</a></li>
+              <li><a>პარტნიორები</a></li>
+              <li><a>პორტფოლიო</a></li>
+              <li><a>კონტაქტი</a></li>
+            </ul>
+          </nav>
+          <div class="burgerBar" id="burgerBar">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
         </div>
       </nav>
     </header>
@@ -130,22 +157,28 @@
               უკავშირდება. პრეზენტაციები ყველასთვის აქტუალურია,
               <strong>“მორზეს”</strong> შექმნის იდეაც ამიტომ გაჩნდა.
             </p>
-            <p>
+            <p class="para">
               გვინდა რომ პროცესი, რომელიც ხშირად სტრესთან, ნერვიულობასთან და
               ფუჭად დაკარგულ დროსთან ასოცირდება პოზიტიურ გამოცდილებად იქცეს,
               როგორც პრეზენტატორისთვის, ასევე მსმენელისთვის.
             </p>
-            <p>
+            <p class="para">
               ჩვენ ვქმნით დასამსახოვრებელ, დამაჯერებელ და შთამაგონებელ სლაიდებს.
               სიტყვებს ილუსტრაციებად, პრეზენტაციას კი პოზიტიურ გამოცდილებად
               ვაქცევთ
             </p>
+            <button class="card-btn" id="butt">&hellip;</button>
           </div>
         </div>
       </section>
-
-      <section>
+      <section class="about-me-section">
+        <h2 class="media-title">ვინ არის "მორზე"?</h2>
         <div class="about-me">
+          <img
+            class="about-me-image media"
+            src="images/420092136_1137270721017425_6676693474321800237_n.jpg"
+            alt="George Makharadze - founder of Morse"
+          />
           <div class="about-me2">
             <h2>ვინ არის მორზე?</h2>
             <p>
@@ -219,7 +252,11 @@
                     <img src="images/partners4.png" alt="Evex logo" />
                   </li>
                   <li class="splide__slide">
-                    <img src="images/partners5.png" alt="Grampus logo" />
+                    <img
+                      class="partners1"
+                      src="images/partners5.png"
+                      alt="Grampus logo"
+                    />
                   </li>
                   <li class="splide__slide">
                     <img src="images/partners6.png" alt="Iliauni logo" />
@@ -235,6 +272,7 @@
                 <ul class="splide__list">
                   <li class="splide__slide">
                     <img
+                      class="partners1"
                       src="images/partners8.png"
                       alt="OlivierCourtios logo"
                     />
@@ -281,7 +319,7 @@
                 src="images/review.png"
                 alt="Morse Experience icon"
               />
-              <p>
+              <p class="ragaca" id="paragraph1">
                 <strong>“მორზე”</strong> საქართველოში პირველი კომპანიაა, რომლის
                 მთავარი პროფილიც “პრეზენტაციებია”. გამოცდილება და
                 პროფესიონალიზმი მორზეს მთავარი “სუპერძალაა”. “მორზე”
@@ -299,7 +337,7 @@
                 src="images/businessman.png"
                 alt="Morse Professionalism icon"
               />
-              <p>
+              <p class="ragaca" id="paragraph2">
                 გიორგი - თხრობის, პრეზენტაციებისა და ვიზუალური კომუნიკაციის
                 ექპერტია. გარდა კოლოსალური პროფესიული გამოცდილებისა, გიორგი
                 პრეზენტაციებისა და თხრობის შესახებ, სალექციო კურსს კითხულობს
@@ -315,7 +353,7 @@
                 src="images/privacy.png"
                 alt="Morse Privacy icon"
               />
-              <p>
+              <p class="ragaca" id="paragraph3">
                 ჩვენთვის და ჩვენი პარტნიორებისთვის ნდობას და კონფიდენციალურობას
                 გადამწვყეტი მნიშვნელობა აქვს. მზად ვართ
                 კონფედენციალურობის/გაუმჟღავნებლობის ხელშეკრულებაც”
@@ -334,7 +372,7 @@
                 alt="Morse Best Presentation icon"
               />
 
-              <p>
+              <p class="ragaca" id="paragraph4">
                 როდესაც თქვენთვის ძალიან მნიშვნელოვანი პრეზენტაცია დაგჭირდებათ,
                 “მორზე” დაგეხმარებით დასამახსოვრებელი, დამაჯერებელი და
                 შთამაგონებელის სლაიდების შექმნაში. სიტყვებს ილუსტრაციებად,
@@ -373,38 +411,46 @@
       </section>
       <section class="service-section">
         <h2 class="services-title">სერვისები</h2>
-        <div class="services-container">
-          <div class="services-card">
-            <img
-              src="./images/419230994_1137271237684040_6140573261887317463_n.jpg"
-              alt="Morse service:Making a presentation"
-            />
-            <h4>პრეზენტაციის დამზადება</h4>
-            <button class="card-btn data" data-link="/html/services.html">
-              იხილეთ ვრცლად
-            </button>
-          </div>
-          <div class="services-card">
-            <img
-              src="./images/419230994_1137271237684040_6140573261887317463_n.jpg"
-              alt="Morse service:Training on “Presentation Skills”"
-            />
-            <h4 class="card-title">
-              ტრენინგი “პრეზენტაციის უნარების” შესახებ.
-            </h4>
-            <button class="card-btn data" data-link="/html/services.html">
-              იხილეთ ვრცლად
-            </button>
-          </div>
-          <div class="services-card">
-            <img
-              src="./images/419230994_1137271237684040_6140573261887317463_n.jpg"
-              alt="Morse service:Individual consultation"
-            />
-            <h4 class="card-title">ინდივიდუალური კონსულტაცია</h4>
-            <button class="card-btn data" data-link="/html/services.html">
-              იხილეთ ვრცლად
-            </button>
+        <div id="carousel6" class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="services-card">
+                  <img
+                    src="./images/419230994_1137271237684040_6140573261887317463_n.jpg"
+                    alt="Morse service:Making a presentation"
+                  />
+                  <h4>პრეზენტაციის დამზადება</h4>
+                  <button class="card-btn data" data-link="/html/services.html">
+                    იხილეთ ვრცლად
+                  </button>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="services-card">
+                  <img
+                    src="./images/419230994_1137271237684040_6140573261887317463_n.jpg"
+                    alt="Morse service:Making a presentation"
+                  />
+                  <h4>პრეზენტაციის დამზადება</h4>
+                  <button class="card-btn data" data-link="/html/services.html">
+                    იხილეთ ვრცლად
+                  </button>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="services-card">
+                  <img
+                    src="./images/419230994_1137271237684040_6140573261887317463_n.jpg"
+                    alt="Morse service:Making a presentation"
+                  />
+                  <h4>პრეზენტაციის დამზადება</h4>
+                  <button class="card-btn data" data-link="/html/services.html">
+                    იხილეთ ვრცლად
+                  </button>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
