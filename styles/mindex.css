@@ -200,12 +200,6 @@
   .four-numbers-section {
     margin: 55px 70px;
   }
-
-  .numbers {
-    width: 14%;
-    height: 160px;
-  }
-
   .service-section {
     padding: 0px 70px;
   }
@@ -236,17 +230,6 @@
 
   .four-numbers-section {
     margin: 55px 30px;
-  }
-
-  .numbers img {
-    height: 40px;
-  }
-
-  .numbers p {
-    font-size: 30px;
-  }
-  .numbers h4 {
-    font-size: 16px;
   }
 
   .service-section {
@@ -479,43 +462,6 @@
 
   .four-numbers-section {
     margin: 55px 70px;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    justify-items: center;
-    row-gap: 30px;
-    column-gap: 30px;
-  }
-
-  .numbers {
-    width: 100%;
-    box-sizing: border-box;
-    height: 175px;
-  }
-
-  .numbers:nth-child(1) {
-    grid-row: 1;
-    grid-column: 1 / span 2;
-  }
-
-  .numbers:nth-child(2) {
-    grid-row: 1;
-    grid-column: 3 / span 2;
-  }
-
-  .numbers:nth-child(3) {
-    grid-row: 1;
-    grid-column: 5 / span 2;
-  }
-
-  .numbers:nth-child(4) {
-    grid-row: 2;
-    grid-column: 2 / span 2;
-  }
-
-  .numbers:nth-child(5) {
-    grid-row: 2;
-    grid-column: 4 / span 2;
   }
 
   .service-section {
@@ -766,24 +712,6 @@
     height: 65px;
   }
 
-  .four-numbers-section {
-    column-gap: 10px;
-    padding: 10px;
-  }
-
-  .numbers p {
-    font-size: 20px;
-  }
-
-  .numbers h5 {
-    font-size: 14px;
-  }
-
-  .numbers {
-    row-gap: 18px;
-    height: 150px;
-  }
-
   .service-section {
     padding: 0px 30px;
   }
@@ -880,9 +808,6 @@
 
   .four-numbers-section {
     margin: 30px;
-    padding: 10px;
-    column-gap: 10px;
-    row-gap: 10px;
   }
 
   .service-section {
@@ -924,37 +849,6 @@
     height: 170px;
   }
 
-  .four-numbers-section {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    padding: 15px;
-  }
-
-  .numbers:nth-child(1) {
-    grid-row: 1;
-    grid-column: 1 / span 2;
-  }
-
-  .numbers:nth-child(2) {
-    grid-row: 1;
-    grid-column: 3 / span 2;
-  }
-
-  .numbers:nth-child(3) {
-    grid-row: 2;
-    grid-column: 2 / span 2;
-  }
-
-  .numbers:nth-child(4) {
-    grid-row: 3;
-    grid-column: 1 / span 2;
-  }
-
-  .numbers:nth-child(5) {
-    grid-row: 3;
-    grid-column: 3 / span 2;
-  }
-
   .service-section {
     padding: 0px;
   }
@@ -977,9 +871,26 @@
     transition: opacity 0.5s ease, max-height 0.5s ease;
   }
 
+  .fade-para {
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0)
+    );
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    transition: all 0.2s ease-in-out;
+  }
+
   .para.app {
     opacity: 1;
     max-height: 500px; /* Adjust this value */
+  }
+
+  .fade-para.unfade {
+    -webkit-mask-image: none !important;
+    mask-image: none !important;
   }
   .about-me {
     padding: 20px 40px 20px 40px;
@@ -1087,16 +998,22 @@
     padding: 0px 0px 20px 0px;
   }
 
+  .why-morse:nth-child(4),
+  .why-morse:nth-child(2) {
+    align-items: flex-start;
+  }
+
+  .why-morse:nth-child(1),
+  .why-morse:nth-child(3) {
+    align-items: flex-end;
+  }
+
   .four-numbers-section {
     margin: 30px 15px;
   }
 }
 
 @media (max-width: 550px) {
-  #carousel1 img {
-    /* object-position: -200px -0px; */
-  }
-
   #carousel1 {
     height: 320px;
   }
@@ -1126,16 +1043,6 @@
 
   .fifth {
     display: none;
-  }
-
-  .why-morse:nth-child(4),
-  .why-morse:nth-child(2) {
-    align-items: flex-start;
-  }
-
-  .why-morse:nth-child(1),
-  .why-morse:nth-child(3) {
-    align-items: flex-end;
   }
 
   .why-morse img {
@@ -1202,18 +1109,12 @@
     font-weight: 500;
   }
 
-  .four-numbers-section {
-    padding: 10px;
-    border-radius: 25px;
-  }
-
   .service-section {
     padding: 0px 60px;
   }
 }
 
 @media (max-width: 460px) {
-
   #carousel1 {
     height: 300px;
   }
@@ -1238,10 +1139,6 @@
   }
   .partners-wrapper {
     padding: 40px 15px;
-  }
-
-  .numbers img {
-    height: 35px;
   }
 
   .partners-container h4 {
@@ -1308,6 +1205,7 @@
     align-items: center;
     padding: 40px;
     box-sizing: border-box;
+    position: relative;
   }
 
   .why-morse .ragaca {
@@ -1324,10 +1222,12 @@
   .why-morse h5 {
     padding: 0px 0px 0px 0px !important;
     font-size: 18px;
+    width: 100%;
+    text-align: center;
   }
 
   .why-morse:nth-child(4) h5 {
-    width: auto;
+    width: 100%;
   }
 
   .why-morse:nth-child(1) img,
@@ -1337,6 +1237,18 @@
     top: -110px;
     left: -30px;
     height: 40px;
+  }
+
+  .why-morse h5 i {
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+    position: absolute;
+    right: 50%;
+    bottom: 10px;
+  }
+
+  .why-morse h4 i.rotated {
+    transform: translateX(-50%) rotate(180deg);
   }
 }
 
