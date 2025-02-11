@@ -2,13 +2,13 @@
 
 document.addEventListener("DOMContentLoaded", function () {
   new Splide("#carousel1", {
-    type: "fade", // Enables fade transitions
+    type: "fade",
     rewind: true,
     pauseOnHover: false,
     perPage: 1,
     perMove: 1,
-    autoplay: true, // Enables autoplay
-    interval: 3000, // Adjusts the speed of autoplay (in milliseconds)
+    autoplay: true,
+    interval: 3000,
     speed: 1000,
     pagination: false,
     arrows: false,
@@ -87,29 +87,64 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   }).mount();
+
+  new Splide("#carousel7", {
+    type: "loop",
+    perPage: 5,
+    pagination: false,
+    focus: 0,
+    omitEnd: true,
+    arrows: false,
+    breakpoints: {
+      1235: {
+        perPage: 4,
+        perMove: 1,
+        autoplay: true,
+        interval: 3000,
+        speed: 1000,
+        pagination: true,
+      },
+
+      930: {
+        perPage: 2,
+      },
+      500: {
+        perPage: 1,
+      },
+    },
+  }).mount();
 });
 
-document.getElementById("butt").addEventListener("click", () => {
+const button = document.getElementById("butt");
+button.addEventListener("click", () => {
   document
     .querySelectorAll(".para")
     .forEach((one) => one.classList.toggle("app"));
+  button.classList.toggle("rotate");
+  document.querySelector(".fade-para").classList.toggle("unfade");
 });
 
 const allItems = document.querySelectorAll(".why-morse");
 allItems.forEach(function (element) {
   element.addEventListener("click", function () {
-    // Close all other paragraphs first
     allItems.forEach((item) => {
       const content = item.querySelector("p");
+
       if (content && item !== element) {
         content.classList.remove("show");
+        const arrow = item.querySelector("h5 i");
+        if (arrow) {
+          arrow.classList.remove("rotated");
+        }
       }
     });
 
-    // Toggle the clicked paragraph
+    const arrow = element.querySelector("h5 i"); // Target the clicked item's arrow
     const content = element.querySelector("p");
+
     if (content) {
       content.classList.toggle("show");
+      arrow.classList.toggle("rotated");
     }
   });
 });
